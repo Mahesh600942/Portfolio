@@ -1,153 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mahesh Chivare | Software Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahesh Chivare | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f8fb;
-      color: #333;
-    }
-    header {
-      background-color: #1e88e5;
-      color: white;
-      padding: 40px 0;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2em;
-    }
-    .nav {
-      text-align: center;
-      background: #1565c0;
-      padding: 10px 0;
-    }
-    .nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: 500;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    section {
-      margin-bottom: 50px;
-    }
-    section h2 {
-      border-left: 5px solid #1e88e5;
-      padding-left: 10px;
-      margin-bottom: 20px;
-      color: #1e88e5;
-      font-size: 1.8em;
-    }
-    .skills span, .tags span {
-      display: inline-block;
-      background: #e3f2fd;
-      color: #1565c0;
-      padding: 8px 15px;
-      margin: 5px;
-      border-radius: 20px;
-      font-size: 14px;
-    }
-    footer {
-      background: #1e88e5;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    ul {
-      padding-left: 20px;
-    }
+    body { font-family: 'Inter', sans-serif; background: linear-gradient(180deg, #f0fff5, #ffffff); color: #222; }
+    section { padding: 60px 0; }
+    .hero { background: linear-gradient(135deg, #1D976C, #93F9B9); color: white; text-align: center; padding: 100px 20px; }
+    .hero img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid white; }
+    .btn-primary { background-color: #1D976C; border: none; }
+    .btn-outline-primary { border-color: #1D976C; color: #1D976C; }
+    .btn-outline-primary:hover { background-color: #1D976C; color: white; }
+    .navbar-dark.bg-dark { background-color: #145A32 !important; }
+    .skills .progress { height: 20px; }
+    .project-card { transition: transform 0.3s; border: none; background: #f9fefb; box-shadow: 0 2px 15px rgba(0,0,0,0.1); border-radius: 8px; }
+    .project-card:hover { transform: translateY(-5px); }
+    h2 { border-bottom: 3px solid #1D976C; display: inline-block; padding-bottom: 5px; font-weight: 600; }
+    a { color: #1D976C; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1, h5 { font-weight: 700; }
   </style>
 </head>
 <body>
-  <header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mahesh Chivare</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  <!-- Hero -->  <section class="hero" id="hero">
+    <img src="your-photo.jpg" alt="Mahesh Chivare Photo" />
     <h1>Mahesh Chivare</h1>
-    <p>Software Developer | Java | Spring | Web Applications</p>
-    <p>Pune, Maharashtra, India | +91-7219418740 | maheshchivare527@gmail.com</p>
-  </header>
-
-  <div class="nav">
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-  <div class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm a Computer Science graduate passionate about software development, especially using Java and Spring. I love building real-world applications and continuously learning new technologies. I am looking for opportunities where I can contribute to meaningful projects and grow with an innovative team.</p>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>B.Sc in Computer Science</strong>, Solapur University (Expected 2025), CGPA: 7.8</li>
-        <li><strong>HSC (12th)</strong>, Shelgoan High School, 2022 – 89.33%</li>
-        <li><strong>SSC (10th)</strong>, T.J.P. School, Vairag, 2020 – 89%</li>
-      </ul>
-    </section>
-
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <div class="skills">
-        <span>Java</span><span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
-        <span>Spring MVC</span><span>Spring Core</span><span>Hibernate</span><span>MySQL</span>
-        <span>Git</span><span>GitHub</span><span>NetBeans</span><span>Eclipse</span>
-        <span>OOPs</span><span>MVC</span><span>REST APIs</span><span>DBMS</span><span>Agile</span>
+    <p>Computer Science Graduate | Aspiring Java Developer</p>
+    <a href="#contact" class="btn btn-primary m-2">Contact Me</a>
+    <a href="Mahesh_Chivare_Resume_Compact.pdf" download class="btn btn-outline-primary m-2">Download Resume</a>
+  </section>  <!-- About -->  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I am a Computer Science graduate passionate about software development, especially with Java and Spring. I enjoy building real-world applications and learning new technologies. I’m seeking opportunities to grow as a developer and work on meaningful projects with an innovative team.</p>
+  </section>  <!-- Skills -->  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="row">
+      <div class="col-md-4"> <h5>Programming</h5><p>Java, Python, HTML, CSS, JavaScript</p> </div>
+      <div class="col-md-4"> <h5>Frameworks</h5><p>Spring MVC, Spring Core, Spring Boot, Hibernate</p> </div>
+      <div class="col-md-4"> <h5>Database</h5><p>MySQL</p> </div>
+      <div class="col-md-4"> <h5>Tools</h5><p>Git, GitHub, NetBeans, Eclipse</p> </div>
+      <div class="col-md-4"> <h5>Concepts</h5><p>OOPs, MVC, RESTful APIs, DBMS</p> </div>
+    </div>
+  </section>  <!-- Projects -->  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card project-card p-3 mb-4">
+          <h5>Student Management System</h5>
+          <p>CRUD web app to manage student data using Java, Spring MVC, Hibernate, MySQL, deployed with Tomcat.</p>
+        </div>
       </div>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Student Management System:</strong> A web application built with Spring MVC and Hibernate for managing student records. Features CRUD operations and MySQL integration.</li>
-        <li><strong>Online Footwear Shop:</strong> E-commerce platform for footwear with order confirmation via email using JavaMail API. Built with Spring MVC and Hibernate, styled with HTML/CSS.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Soft Skills</h2>
-      <div class="tags">
-        <span>Team Collaboration</span>
-        <span>Problem Solving</span>
-        <span>Time Management</span>
-        <span>Quick Learner</span>
+      <div class="col-md-6">
+        <div class="card project-card p-3 mb-4">
+          <h5>Online Footwear Shop</h5>
+          <p>E-commerce site for shoes with email order confirmation using Java, Spring MVC, Hibernate, JavaMail API, MySQL.</p>
+        </div>
       </div>
-    </section>
-
-    <section>
-      <h2>Languages</h2>
-      <div class="tags">
-        <span>English</span>
-        <span>Hindi</span>
-        <span>Marathi</span>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>📧 <a href="mailto:maheshchivare527@gmail.com">maheshchivare527@gmail.com</a></p>
-      <p>📍 Pune, Maharashtra, India</p>
-      <p>🔗 <a href="https://linkedin.com/in/mahesh-chivare-4a77b9340" target="_blank">LinkedIn</a> | <a href="https://github.com/Mahesh600942" target="_blank">GitHub</a></p>
-    </section>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Mahesh Chivare. All rights reserved.</p>
-  </footer>
-</body>
+    </div>
+  </section>  <!-- Education -->  <section id="education" class="container">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Sc. in Computer Science</strong>, Punyashlok Ahilyadevi Holkar Solapur University, Expected 2025, CGPA: 7.8</li>
+      <li><strong>HSC</strong> - Science, Shelgoan High School, 2022, 89.33%</li>
+      <li><strong>SSC</strong>, T.J.P. School, 2020, 89%</li>
+    </ul>
+  </section>  <!-- Contact -->  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:maheshchivare527@gmail.com">maheshchivare527@gmail.com</a></p>
+    <p>Phone: +91-7219418740</p>
+    <p>
+      <a href="https://linkedin.com/in/mahesh-chivare-4a77b9340" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+      <a href="https://github.com/Mahesh600942" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </p>
+  </section>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body>
 </html>
